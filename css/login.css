@@ -6,6 +6,7 @@
 
 body {
     background: url("../img/imagen2.jpg");
+
     background-position: center;
     display: flex;
     justify-content: center;
