@@ -14,22 +14,23 @@
                 <h1>Crear Cuenta</h1>
                 <h4>Ingrese los datos para crear tu cuenta</h4>
                 <div id="Layer1" style="width:100%;  overflow-y: scroll; scrollbar-base-color:aqua;">
+                    <input type="text" name="cedula" placeholder="Cedula" required="">
                     <input type="text" name="username" placeholder="Nombres" required="">
                     <input type="text" name="lastname" placeholder="Apellido paterno" required="">
-                    <input type="text" name="lastname2" placeholder="Apellido materno" >
-                    <input type="email" name="email" placeholder="Correo">
-                    <input type="text" name="cedula" placeholder="Cedula" required="">
+                    <input type="text" name="lastname2" placeholder="Apellido materno (Opcional)" >
+                    <input type="email" name="email" placeholder="Correo (Opcional)" >
+                    
                     <input type="date" name="fecha" placeholder="Fecha de nacimiento" required="">
                     <input type="text" name="edad" placeholder="Edad" required="">
                     <input type="text" name="telefono" placeholder="Telefono" required="">
                     <input type="text" name="ciudad" placeholder="Ciudad" required="">
-                    <input type="text" name="direccion" placeholder="Direccion" required="">
-                    
+                    <input type="text" name="direccion" placeholder="Direccion" required=""> 
+                    <label>Añadir foto (Opcional)</label>
+                    <input type="file" name="foto" placeholder="Foto"> 
+
                     <label>Datos para iniciar sesión</label>
                     <input type="text" name="user" placeholder="Genere usuario" required="">
-                    <input type="password" name="password" placeholder="Genere contraseña" required="">
-
-                
+                    <input type="password" name="password" placeholder="Contraseña" required="">
                 </div>
                 <button type="submit" name="register" value="register">Registrar</button>
             </form>
@@ -65,4 +66,5 @@
     
 </body>
 <script src="js/login.js"></script>
+
 </html>
