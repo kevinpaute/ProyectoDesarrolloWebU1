@@ -10,7 +10,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
     integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/estilos.css" />
   <title>Datos Médicos♥</title>
@@ -45,31 +45,17 @@
       border-radius: 10px;
       padding: 20px;
       margin-top: 40px;
-      width: 40%;
+      width: 150%;
       text-align: center;
 
 
     }
 
-    #seccion2{
+    #seccion2 {
       background: #c0ebe1;
     }
 
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-      margin: 0 auto;
 
-    }
-
-    th,
-    td {
-      padding: 5px;
-      text-align: left;
-      text-align: center;
-    }
 
     table th {
       background-color: #cac8ce;
@@ -79,14 +65,14 @@
       background-color: #e6e6e6;
     }
 
-    h1{
+    h1 {
       color: #0b034d;
     }
-   
+
     h1:active {
       color: #008888;
-   }
-   
+    }
+
 
     .boton {
       margin: 0 auto;
@@ -94,16 +80,21 @@
       color: white;
     }
 
- 
+
 
     label {
-      margin: 0 auto;
-      width: 20%;
+      margin: 0 20px;;
+   
       font-weight: bold;
 
     }
 
-   
+
+    .registros {
+      display: flex;
+    }
+
+
   </style>
 
   </head>
@@ -117,89 +108,97 @@
           <h1>INFORMACIÓN MÉDICO </h1>
         </div>
         <br>
-        <div>
-          <label>Nombres</label>
-          <p>
-            <?php echo $nombre. " ". $apellido; ?>
-          </p>
-        </div>
-        <div>
-          <label>Cedula</label>
-          <p>
-            <?php echo $cedula; ?>
-          </p>
-        </div>
-        <div>
-          <label>Telefono</label>
-          <p>
-            <?php echo $telefono; ?>
-          </p>
-        </div>
-        <div>
-          <label>Especialidad</label>
-          <p>
-            <?php echo $especialidad; ?>
-          </p>
-        </div>
-        <div>
-          <label>Paciente</label>
-          <p>
-            <?php echo $paciente; ?>
-          </p>
-        </div>
-        <div>
-          <label>Horario</label>
-          <p>
-            <?php echo $horario; ?>
-          </p>
+        <div class="registros">
+          <div>
+            <label>Nombres</label>
+            <p>
+              <?php echo $nombre. " ". $apellido; ?>
+            </p>
+
+          </div>
+          <div>
+            <label>Cedula</label>
+            <p>
+              <?php echo $cedula; ?>
+            </p>
+          </div>
+          <div>
+            <label>Telefono</label>
+            <p>
+              <?php echo $telefono; ?>
+            </p>
+          </div>
+          <div>
+            <label>Especialidad</label>
+            <p>
+              <?php echo $especialidad; ?>
+            </p>
+          </div>
+          <div>
+            <label>Paciente</label>
+            <p>
+              <?php echo $paciente; ?>
+            </p>
+          </div>
+          <div>
+            <label>Horario</label>
+            <p>
+              <?php echo $horario; ?>
+            </p>
+          </div>
+
+          <br>
+          <div>
+            <label>Foto</label>
+            <p> <img src="data:image/jpg;base64,<?php echo base64_encode($foto);?>" width=180px"></p>
+          </div>
+          <br>
+
+          <p><a class="btn boton" href="index.php">Atrás</a></p>
         </div>
       </div>
-      <br>
+    </div>
+
+
+    <!--SECCIÓN CITAS-->
+    <div class="container" id="seccion2">
       <div>
-        <label>Foto</label>
-        <p> <img src="data:image/jpg;base64,<?php echo base64_encode($foto);?>" width=180px"></p>
+        <div>
+          <h1>INFORMACIÓN CITAS </h1>
+        </div>
+        <br>
+        <div class="registros">
+          <div>
+            <label>Nombres</label>
+            <p>
+              <?php echo $nombre. " ". $apellido; ?>
+            </p>
+          </div>
+          <div>
+            <label>Cedula</label>
+            <p>
+              <?php echo $cedula; ?>
+            </p>
+          </div>
+          <div>
+            <label>Telefono</label>
+            <p>
+              <?php echo $telefono; ?>
+            </p>
+          </div>
+          <div>
+            <label>Horario de la cita</label>
+            <p>
+              <?php echo $fechacita; ?>
+            </p>
+          </div>
+      
+        <br>
+        <br>
+        <p><a class="btn boton" href="index.php">Atrás</a></p>
       </div>
-      <br>
-      <p><a class="btn boton" href="index.php">Atrás</a></p>
     </div>
-
-
-<!--SECCIÓN CITAS-->
-<div class="container" id="seccion2">
-  <div>
-    <div>
-      <h1>INFORMACIÓN CITAS </h1>
     </div>
-    <br>
-    <div>
-      <label>Nombres</label>
-      <p>
-        <?php echo $nombre. " ". $apellido; ?>
-      </p>
-    </div>
-    <div>
-      <label>Cedula</label>
-      <p>
-        <?php echo $cedula; ?>
-      </p>
-    </div>
-    <div>
-      <label>Telefono</label>
-      <p>
-        <?php echo $telefono; ?>
-      </p>
-    </div>
-    <div>
-      <label>Horario de la cita</label>
-      <p>
-        <?php echo $fechacita; ?>
-      </p>
-    </div>
-  </div>
-  <br>
-  <br>
-  <p><a class="btn boton" href="index.php">Atrás</a></p>
-</div>
 
     <footer>
 
@@ -230,7 +229,8 @@
             <h2>Productos y servicios</h2>
             <a href=""><img align="center" src="./img/laboratorio-medico.png" width="25px" height="25px">Laboratorio</a>
             <a href=""><img align="center" src="./img/doctor.png" width="25px" height="25px"> Imagen</a>
-            <a href=""><img align="center" src="./img/prueba-de-covid.png" width="25px" height="25px"> Pruebas de covid
+            <a href=""><img align="center" src="./img/prueba-de-covid.png" width="25px" height="25px"> Pruebas de
+              covid
               19</a>
 
             <br>
@@ -251,7 +251,8 @@
               960078542</a>
             <a href=""><img align="center" src="./img/correo-electronico.png" width="25px"
                 height="25px">info@clinicmonblue.org.ec</a>
-            <a href=""><img align="center" src="./img/pin-de-ubicacion.png" width="25px" height="25px">Rosales Av.Manuel
+            <a href=""><img align="center" src="./img/pin-de-ubicacion.png" width="25px" height="25px">Rosales
+              Av.Manuel
               Rendon. Santo Domingo - Ecuador</a>
 
 
