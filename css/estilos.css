@@ -15,7 +15,6 @@ body {
 .contenedor {
     width: 90%;
     max-width: 1000px;
-    /* background: #ccc;*/
     margin: auto; /*Para cetrar todo*/
     overflow: hidden;
 }
