@@ -1,35 +1,46 @@
 <?php
-    // require_once('conexion.php');
+    require_once('conexion.php');
 
-    // Validar que si se envian los datos 
-    // Usamos el Metodo GET, ya uqe estamos trabajando por URL
-    // if(isset($_GET['id']) && !empty(trim($_GET['id']))){
-    //     // cREACIÓN DE LA CONSULTA
-    //     $query = 'SELECT * FROM usuario WHERE idUsuario=?';
+    # Validar que si se envian los datos 
+    # Usamos el Metodo GET, ya uqe estamos trabajando por URL
+    if(isset($_GET['id']) && !empty(trim($_GET['id']))){
+        // cREACIÓN DE LA CONSULTA
+        $query = 'SELECT * FROM paciente WHERE idUsuario=?';
 
-    //     // Preparar la sentencia
-    //     if($stmt = $conn -> prepare($query)){
-    //         $stmt -> bind_param('i', $_GET['id']);
-    //         // Ejecución de la entencia
-    //         if($stmt -> execute()){
-    //             $result = $stmt -> get_result();
-    //             if($result -> num_rows == 1){
-    //                 $row = $result -> fetch_array(MYSQLI_ASSOC);
-    //                 $nombre = $row['nombreUsuario'];
-    //             }else{
-    //                 echo 'Error, No existen los datos';
-    //                 exit();
-    //             }
-    //         }else{
-    //             echo 'Error! Revise la conexión con al base de datos';
-    //             exit();
-    //         }
-    //     }
-    //     $stmt -> close();
-    //     $conn -> close();
-    // } else{
-    //     echo 'Error intente mas tarde';
-    // }
+        // Preparar la sentencia
+        if($stmt = $conn -> prepare($query)){
+            $stmt -> bind_param('i', $_GET['id']);
+            // Ejecución de la entencia
+            if($stmt -> execute()){
+                $result = $stmt -> get_result();
+                if($result -> num_rows == 1){
+                    $row = $result -> fetch_array(MYSQLI_ASSOC);
+                    $nombres = $row['nombres'];
+                    $apellidoPaterno = $row['apellido_paterno'];
+                    $apellidoMaterno = $row['apellido_materno'];
+                    $correo = $row['correo'];
+                    $fNacimiento = $row['fNacimiento'];
+                    $edad = $row['edad'];
+                    $telefono = $row['telefono'];
+                    $ciudad = $row['ciudad'];
+                    $direccion = $row['direccion'];
+                    $foto = $row['foto'];
+                    $user = $row['user'];
+                    $password = $row['password'];
+                }else{
+                    echo 'Error, No existen los datos';
+                    exit();
+                }
+            }else{
+                echo 'Error! Revise la conexión con al base de datos';
+                exit();
+            }
+        }
+        $stmt -> close();
+        $conn -> close();
+    } else{
+        echo 'Error intente mas tarde';
+    }
 ?>
 
 <!DOCTYPE html>
