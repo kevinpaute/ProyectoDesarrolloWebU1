@@ -5,7 +5,7 @@ session_destroy(); // Destruye los objetos creados de la sesión
 
 echo "<script>alert('Sesión cerrada correctamente');</script>";
 
-require_once('login.html');
+require_once('login.php');
 
 ?>
 

@@ -131,7 +131,7 @@ button.ghost {
     border: 1px solid rgba(0, 62, 138, 0.785);
     padding: 7px;
     display: flex;
-    width: 90%;
+    width: 70%;
 }
 
 #regresar a{
@@ -246,4 +246,10 @@ button.ghost {
 
 .tyb{
     width: 100%;
+}
+
+#regresar1{
+    background-color: rgba(0, 62, 138, 0.785);
+    border: 1px solid rgba(0, 62, 138, 0.785);
+    margin-top: -300px;
 }
