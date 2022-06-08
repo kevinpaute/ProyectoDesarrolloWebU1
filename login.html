@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/loader.css">
     <title>Crear cuenta</title>
 </head>
 <body>
+    <div class="loader_bg">
+        <div class="loader">
+
+        </div>
+    </div>
     <div class="container" id="container">
         <div class="form-container crear-container">
             <form action="registrar.php" method="post">
@@ -33,9 +39,8 @@
                     <input type="password" name="password" placeholder="Contraseña" required="">
                 </div>
                 <button type="submit" name="register" value="register">Registrar</button>
-                
             </form>
-            <a href="index.php"><button type="clear" id="regresar">Regresar</button></a>
+          
             
         </div>
         <div class="form-container iniciar-container">
@@ -48,7 +53,7 @@
                 
                 <button type="submit" name="login" value="login">Entrar</button>
 
-                
+
                 <button type="clear" id="regresar"> <a href="index.php">Regresar</a></button>
             </form>
         </div>
@@ -73,5 +78,10 @@
     
 </body>
 <script src="js/login.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
 </html>
