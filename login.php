@@ -36,47 +36,28 @@ if(isset($user)){
     if($registro2['idMedico'] != null){
         $_SESSION['id']=$registro2['idMedico']; 
         $_SESSION['nombre']=$registro2['nombres'];
-        header('Location: medicos.php');
+        header('Location: medico.php');
     }
     else if($registro['idPaciente'] != null){
         $_SESSION['id']=$registro['idPaciente']; 
         $_SESSION['nombre']=$registro['nombres'];
         header('Location: paciente.php');
     }
-    else if($registro3['idDireccion'] != null){
+    else if($registro3['roles'] == 'Gerente'){
         $_SESSION['id']=$registro3['idDireccion']; 
         $_SESSION['nombre']=$registro3['nombres'];
-        header('Location: direccion.php');
+        header('Location: php_cita/citas_1.php');
     }
-    else{
+
+    else if($registro3['roles'] == 'Secretaria'){
+        $_SESSION['id']=$registro3['idDireccion']; 
+        $_SESSION['nombre']=$registro3['nombres'];
+        header('Location: php_cita/citas_1_1.php');
+    }else{
         echo '<script>alert("Usuario o contraseña incorrectos");</script>';
         header('Location: login.php');
     }
 
-    //Si el usuario y contraseña son correctos
-//     if ($registro['idPaciente']==null){
-//         if ($registro2['idMedico']==null){
-//             if ($registro3['idDireccion']==null){
-//                 //Si es nulo redirige al mismo formulario
-//                 header('Location: login.html');
-//             }else{
-//                 //Se define las variables de sesión y se redirige a la página de usuario
-//                 $_SESSION['id']=$registro3['idDireccion']; 
-//                 $_SESSION['nombre']=$registro3['nombres'];
-//                 header('Location: citas.html');
-//             }
-//         }else{
-//             //Se define las variables de sesión y se redirige a la página de usuario
-//             $_SESSION['id']=$registro2['id_medico']; 
-//             $_SESSION['nombre']=$registro2['nombres'];
-//             header('Location: medicos.html');
-//         }
-//     }else{
-//         //Se define las variables de sesión y se redirige a la página de usuario
-//         $_SESSION['id']=$registro['id_paciente']; 
-//         $_SESSION['nombre']=$registro['nombres'];
-//         header('Location: paciente.php');
-//     }
 }else{
     header("location:login.html"); //Redireccionamos a la pagina principal
 }

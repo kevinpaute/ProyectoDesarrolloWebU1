@@ -37,6 +37,7 @@
           <h1>Tabla de Usuarios</h1>
           <div>
             <button id="btn_cargar_usuarios" class="btn-1 active" >Cargar Citas</button>
+            <p><a href="../cerrarsesion.php" class="btn btn-primary">Cerrar Sesión</a></p>
           </div>
         </header>
         <main>
