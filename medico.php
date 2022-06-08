@@ -14,6 +14,7 @@ $nombre = $_SESSION['nombre'];
 //Consultamos los datos del médico según su ID almacenado en Sesión
 //Se detalla la consulta
 $consulta = "SELECT m.idMedico, m.nombres, m.apellido_paterno, m.cedula, m.telefono, m.correo, m.ciudad, m.direccion, m.user, m.password, h.dias, h.hora_ingreso,  h.hora_salida, e.nmbres FROM medico as m, especialidad as e, horario as h WHERE h.idHorario = m.idHorario AND e.idEspecialidad = m.idEspecialidad AND m.idMedico = ?";
+//preparar la consulta
 if ($stmt = $conn->prepare($consulta)) {
    //Se establecen los parámetros
   //En este caso la i representa que se va a pasar un dato entero 
