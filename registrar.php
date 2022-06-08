@@ -8,17 +8,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(isset ($_POST['cedula']) && isset($_POST['username']) &&
     isset ($_POST ['lastname']) && isset ($_POST ['lastname2']) &&
     isset ($_POST ['email']) &&  isset ($_POST ['fecha']) && isset($_POST['edad'])
-    && isset ($_POST ['telefono']) && isset ($_POST ['direccion']) && isset($_POST['foto'])
+    && isset ($_POST ['telefono']) && isset ($_POST ['ciudad']) && isset ($_POST ['direccion']) && isset($_POST['foto'])
     && isset ($_POST ['user']) && isset ($_POST ['password'])){
         // Configurar consulta para insertar datos en la tabla contactos
-        $sql = "INSERT INTO paciente (cedula, nombre, apellido, apellido2, email, fecha, edad, telefono, direccion, foto, usuario, password)
-        VALUES (?, ? , ? , ? , ? , ?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO paciente (cedula, nombres, apellido_paterno, apellido_materno, correo, fNacimiento, edad, telefono, ciudad, direccion, foto, user, password) 
+        VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         // Verificar si la consulta se ejecuto correctamente
+
         if ($stmt = $conn->prepare($sql)) { 
             // Configurar parametros de la consulta
             $stmt->bind_param( "sssssssssssss", $_POST['cedula'], $_POST['username'], $_POST
-            ['lastname'], $_POST['lastname2'], $_POST['email'], $_POST['fecha'], $_POST['edad'], 
-            $_POST['telefono'], $_POST['direccion'], $_POST['foto'], $_POST['user'], $_POST['password']);
+            ['lastname'], $_POST['lastname2'], $_POST['email'], $_POST['fecha'], $_POST['edad'], $_POST
+            ['telefono'], $_POST ['ciudad'], $_POST['direccion'], $_POST['foto'], $_POST['user'], $_POST['password']);
             if ($stmt->execute()) {
                 header('Location: index.php');
                 exit();
@@ -40,5 +41,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 
-require_once "login.html";
+require_once "login.php";
 ?>
