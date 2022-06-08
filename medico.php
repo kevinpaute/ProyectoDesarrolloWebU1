@@ -117,7 +117,7 @@ if ($stmt2 = $conn->prepare($consulta2)) {
 
 //Proceso de actualización de información
 if($_SERVER["REQUEST_METHOD"] == "POST"){
-  //Se valida que los campos a actualizar no estén vacíos la función es isset, puedes revisar mas en la documentación de PHP
+  //Se valida que los campos a actualizar no estén vacíos la función es isset
   if(isset($_POST['correo']) && isset($_POST['telefono']) && isset($_POST['ciudad'])){
     //Se detalla la consulta
     $sql="UPDATE medico SET correo=?, telefono=?, ciudad=?, direccion=?, password=? WHERE idMedico=?";
