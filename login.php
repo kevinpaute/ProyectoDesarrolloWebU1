@@ -61,11 +61,6 @@ if(isset($user)){
 }
 
 
-    
-
-
-
-
-
+require_once './login.html';
 
 ?>
