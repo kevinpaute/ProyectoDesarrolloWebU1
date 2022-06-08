@@ -128,7 +128,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       //Se ejecuta la sentencia
       if($stnt->execute()){
         //Si todo sale bien se recarga la página
-        header("location: medicos.php");
+        header("location: medico.php");
         exit();
       }else{
         //Caso contrario muestra un mensaje de error
