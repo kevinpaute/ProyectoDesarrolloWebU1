@@ -12,5 +12,4 @@ $dbname = "clinica"; //Nombre de la base de datos
      die("Connection failed: " . $conn->connect_error);
  }
 
-
 ?>
