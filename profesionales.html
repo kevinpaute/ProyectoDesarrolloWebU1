@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/0ea7a89597.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,600&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="css/profesionales.css" />
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/slider.css" />
@@ -62,124 +63,50 @@
       </div>
     </section>
 
-    <section class="trabajos">
-      <div class="contenedor">
-        <h3 class="titulo">Especialidades Disponibles</h3>
-        <div class="contenedor-trabajos">
-          <div class="trabajo">
-            <div class="thumb">
-              <img src="img/cardi.jpg" alt="Dasayunos" class="prue-fot"/>
-            </div>
-            <div class="descripcion">
-              <p class="nombre"></p>
-              <p class="categoria"></p>
-              <nav>
-                <ul>
-                   
-                    <li><a href="#">CARDIOLOGIA</a><ul>
-                        <li><a href="#">Doctor 1</a></li>
-                        <li><a href="#">Doctor 2</a></li>
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#">Doctor 4</a></li>
-                        <li><a href="#">Doctor 5</a></li>
-                    </ul></li>
-        
-                </ul>
-        </nav>
-            </div>
-          </div>
-          <div class="trabajo">
-            <div class="thumb">
-              <img src="img/pedii.png" alt="Dasayunos" class="prue-fot"/>
-            </div>
-            <div class="descripcion">
-              <p class="nombre"></p>
-              <p class="categoria"></p>
-              <nav>
-                <ul>
-                   
-                    <li><a href="#">PEDIATRIA</a><ul>
-                        <li><a href="#">Doctor 1</a></li>
-                        <li><a href="#">Doctor 2</a></li>
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#">Doctor 4</a></li>
-                        <li><a href="#">Doctor 5</a></li>
-                    </ul></li>
-        
-                </ul>
-        </nav>
-            </div>
-          </div>
-          <div class="trabajo">
-            <div class="thumb">
-              <img src="img/pedi.jpg" alt="Dasayunos" class="prue-fot"/>
-            </div>
-            <div class="descripcion">
-              <p class="nombre"></p>
-              <p class="categoria"></p>
-              <nav>
-                <ul>
-                   
-                    <li><a href="#">PSICOLOGIA</a><ul>
-                        <li><a href="#">Doctor 1</a></li>
-                        <li><a href="#">Doctor 2</a></li>
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#">Doctor 4</a></li>
-                        <li><a href="#">Doctor 5</a></li>
-                    </ul></li>
-        
-                </ul>
-        </nav>
-            </div>
-          </div>
-          <div class="trabajo">
-            <div class="thumb">
-              <img src="img/psico.jpg" alt="Dasayunos" class="prue-fot"/>
-            </div>
-            <div class="descripcion">
-              <p class="nombre"></p>
-              <p class="categoria"></p>
-              <nav>
-                <ul>
-                   
-                    <li><a href="#">HEMATOLOGIA</a><ul>
-                        <li><a href="#">Doctor 1</a></li>
-                        <li><a href="#">Doctor 2</a></li>
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#">Doctor 4</a></li>
-                        <li><a href="#">Doctor 5</a></li>
-                    </ul></li>
-        
-                </ul>
-        </nav>
-            </div>
-          </div>
-          <div class="trabajo">
-            <div class="thumb">
-              <img src="img/hema.jpg" alt="Dasayunos" class="prue-fot"/>
-            </div>
-            <div class="descripcion">
-              <p class="nombre"></p>
-              <p class="categoria"></p>
-              <nav>
-                <ul>
-                   
-                    <li><a href="#">FISIOTERAPEUTAS</a><ul>
-                        <li><a href="#">Doctor 1</a></li>
-                        <li><a href="#">Doctor 2</a></li>
-                        <li><a href="#">Doctor 3</a></li>
-                        <li><a href="#">Doctor 4</a></li>
-                        <li><a href="#">Doctor 5</a></li>
-                    </ul></li>
-        
-                </ul>
-        </nav>
-            </div>
-          </div>
-        
-
-        
   </section>
+</head>
+<style>
+  label{
+      font-weight: bold;
+  }
+</style>
+<body>
+   
+  <div class="container">
+    <h2>Profesionales</h2>
+   
+    <table>
+        <thead>
+            <tr>
+                <th>Nº</th>
+                <th>Nombres</th>
+                <th>Especialidad</th>
+                <th>Ver detalles</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+          
+            <?php
+                if($resultado->num_rows > 0){
+                    while($row = $resultado->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>" . $row['idMedico'] . "</td>";
+                        echo "<td>" . $row['nombres'] . " " . $row['apellido_paterno'] . " " . $row['apellido_materno']. "</td>";
+                        echo "<td>" . $row['nmbres'] . "</td>";
+                    
+                        echo'<td>';
+                        echo '<a class="link" href="leerprofesionales.php?id=' . $row['idMedico'] . '"><input type="button" class="button1" value="Leer"></a>';
+                        echo '</td>';
+                        echo "</tr>";
+                    }
+                }else{
+                    echo "<p>No hay resultados para mostrar</p>";
+                }
+            ?>
+
+    </table>
+</div>
 
   <footer>
   
