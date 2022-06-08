@@ -8,3 +8,4 @@ echo "<script>alert('Sesión correctamente');</script>";
 require_once('login.html');
 
 ?>
+
