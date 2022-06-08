@@ -1,18 +1,15 @@
 <?php
-//Datos
-define('SERVERNAME','localhost');
-define('USERNAME','root');
-define('PASSWORD','');
-define('DBNAME','datos');
 
-//creacion de la conexion a la base de datos con mysqli
-$conn = new mysqli(SERVERNAME,USERNAME,PASSWORD,DBNAME);
+$servername = "localhost";  //Nombre del servidor
+$username = "root"; //Usuario de la base de datos
+$password = "";     //Contraseña de la base de datos
+$dbname = "clinica"; //Nombre de la base de datos
 
-//Cotrolar la conexion
-if($conn->connect_error){
-    die('Coenxion fallida'.$conn -> connect_error);
-}else{
-    //echo('Conexion exitosa');
-}
+ // Crear coenxion
+ $conn = new mysqli($servername, $username, $password, $dbname);
+ 
+ if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+ }
 
 ?>
