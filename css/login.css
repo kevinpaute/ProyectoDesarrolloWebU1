@@ -127,11 +127,11 @@ button.ghost {
 
 
 #regresar{
-    background-color: rgb(3, 3, 3);
-    border: 1px solid rgb(3, 3, 3);
+    background-color: rgba(0, 62, 138, 0.785);
+    border: 1px solid rgba(0, 62, 138, 0.785);
     padding: 7px;
     display: flex;
-    width: 100%;
+    width: 90%;
 }
 
 #regresar a{
