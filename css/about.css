@@ -1,0 +1,37 @@
+.resumen{
+    display: flex;
+    margin-top: 50px;
+}
+
+#about{
+    padding-right: 20px;
+}
+
+#parrafoAb{
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 170%;
+}
+
+.objetivos{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+
+.objetivos div{
+    margin-top: 70px;
+    width: 90%;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    line-height: 150%;
+}
+
+.contacto{
+    padding-top: 50px;
+    margin-bottom: 40px;
+    border-radius: 1px solid rgb(63, 146, 255);
+}
