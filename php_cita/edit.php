@@ -41,8 +41,8 @@ if (isset($_POST['update'])) { //en caso que exista el metodo updatte por quiere
   <div class="cerrar">
         <div class="collapse" id="navbarToggleExternalContent">
             <div class="bg-dark p-4">
-              <h5 class="text-white h4">Collapsed content</h5>
-              <span class="text-muted">Toggleable via the navbar brand.</span>
+              <h5 class="text-white h4">Clinica</h5>
+              <span class="text-muted">Editar datos</span>
             </div>
           </div>
           <nav class="navbar navbar-dark bg-dark">
