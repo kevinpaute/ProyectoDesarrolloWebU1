@@ -146,7 +146,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 //Se cierra la conexión
 $conn->close();
-  
 require_once "medico.html";
-?>
 
+?>

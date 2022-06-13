@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     // Datos para la conexión hacia la base
     define('SERVERNAME', 'localhost');
@@ -14,4 +15,21 @@
     } else{
       
     }
+=======
+
+<?php
+
+$servername = "localhost";  //Nombre del servidor
+$username = "root"; //Usuario de la base de datos
+$password = "";     //Contraseña de la base de datos
+$dbname = "clinica"; //Nombre de la base de datos
+
+ // Crear coenxion
+ $conn = new mysqli($servername, $username, $password, $dbname);
+ 
+ if ($conn->connect_error) {
+     die("Connection failed: " . $conn->connect_error);
+ }
+
+>>>>>>> 071f26689cd72eaeae6aad90b56ef732b2053d27
 ?>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 
@@ -78,3 +79,11 @@ if(isset($user)){
     
 </body>
 </html> -->
+=======
+
+<?php
+
+require_once 'index.html';
+
+?>
+>>>>>>> 071f26689cd72eaeae6aad90b56ef732b2053d27

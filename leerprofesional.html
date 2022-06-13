@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/leerprofesionales.css" />
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgb(176, 198, 241) 0%, rgb(140, 158, 174) 36%, rgb(179, 186, 229) 100%);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .contenedor{
+            width: 40%;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #000;
+            margin: 0 auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #000;
+            padding-left:40%;
+        }
+
+        h1{
+            text-align: left;
+            color: #1a2537;
+            font-size: 60px;
+            font-family: '';
+            text-align: center;
+        }
+        input[type="text"]{
+            font-size: 20px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .button{
+            background: #1a2537;
+            color: #fff;
+            width: 100%;
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-family: 'Tangerine', cursive;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .button:hover{
+            background: cadetblue;
+        }
+
+        label{
+            padding: 50px;
+            text-align: right;
+            font-family: 'Tangerine', cursive;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+
+        .link{
+            text-decoration: none;
+            color: #1a2537;
+            font-weight: 600;
+        }
+        .link:hover{
+            color: rgb(28, 107, 110);
+        }
+
+    
+    </style>
+    <title>Leer</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div>
+            <h1>Datos del Cliente</h1>
+        </div>
+        <div>
+            <label>Nombre:</label>
+            <p><?php echo $nombres. " ". $apellidos; ?></p>
+        </div>
+        <div>
+            <label>Correo:</label>
+            <p><?php echo $correo; ?></p>
+        </div>
+        <div>
+            <label>Teléfono:</label>
+            <p><?php echo $telefono; ?></p>
+        </div>
+        <div>
+            <label>Dirección:</label>
+            <p><?php echo $direccion; ?></p>
+        </div>
+        <div>
+            <label>Especialidad:</label>
+            <p><?php echo $especialidad; ?></p>
+        </div>
+        
+        <div>
+            <label>Foto:</label>
+            <p> <img src="data:image/jpg;base64,<?php echo base64_encode($foto);?>" width=180px"></p>
+        </div>
+        <a class="link" href="profesional.php"><input type="button" class="button" value="Volver"></a>
+    </div>
+    </body>  
+</html>
+
+
