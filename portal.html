@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="imagenes/icono.png">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/portal.css">
+    <title>Portales</title>
+</head>
+
+<body>
+    <div class="loader_bg">
+        <div class="loader">
+
+        </div>
+    </div>
+    <table class="registro">
+        <tbody>
+            <tr>
+                <td align="center">
+                    <h1>Login Usuarios</h1><br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="login.php"> <button class="paciente">Portal Pacientes</button></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="login2.php"><button class="empresarial">Portal Empresarial</button></a>
+                </td>
+                <br>
+            </tr>
+            <tr>
+                <td>
+                    <button type="clear" id="regresar2"> <a href="index.php">Regresar</a></button>
+                </td>
+
+        </tbody>
+        <br>
+    </table>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+</html>
