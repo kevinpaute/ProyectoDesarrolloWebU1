@@ -1,0 +1,48 @@
+body {
+  font-family: "Bevan";
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(6, 233, 177, 1) 36%,
+    rgb(0, 65, 78) 100%
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  background: #e6fbfc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 40px;
+  width: 150%;
+  text-align: center;
+}
+#seccion2 {
+  background: #c0ebe1;
+}
+table th {
+  background-color: #cac8ce;
+}
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+h1 {
+  color: #0b034d;
+}
+h1:active {
+  color: #008888;
+}
+.boton {
+  margin: 0 auto;
+  background-color: #0b034d;
+  color: white;
+}
+label {
+  margin: 0 20px;
+
+  font-weight: bold;
+}
+.registros {
+  display: flex;
+}
