@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/loader.css">
+    
+    
+    <style>
+
+        #container{
+            width: 45%;
+            text-align: center;
+            height: 100%;
+        }
+        #regresar2{
+            width: 52%;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(55, 98, 182);
+            color: rgb(19, 19, 19);
+            text-align: center;
+            cursor: pointer;
+            border-color: rgb(55, 98, 182);
+
+
+        }
+
+        #regresar2>a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        #login{
+            width: 60%;
+            margin: auto;
+            margin-top: 10px;
+
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #formulario{
+            
+            margin-top: 150px;
+
+        }
+
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    <div class="loader_bg">
+        <div class="loader">
+
+        </div>
+    </div>
+    <div class="container" id="container">  
+            <form action="login2.php" id="formulario" method="post">
+                
+                <h1>Iniciar Sesión</h1>
+                <br>
+                <input type="text" name="user" id=¨user¨ placeholder="Usuario" required="">
+                <input type="password" name="password" id=¨password¨ placeholder="Contraseña" required="">
+                <br><br>
+                <button type="submit" name="login" id="login" value="login">Entrar</button>
+
+            </form>
+            <button type="clear" id="regresar2"> <a href="portal.php">Regresar</a></button>
+    </div>
+</body>
+<script src="js/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.loader_bg').fadeToggle();
+        }, 1500);
+    </script>
+</html>

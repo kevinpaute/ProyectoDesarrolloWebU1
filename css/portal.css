@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    background: url("../img/imagen2.jpg");
+
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    margin: -20px 0 50px;
+}
+  
+  .registro {
+    width: 45%;
+    min-height: 350px;
+    background: #f6f2fd;
+    padding: 30px;
+    margin: auto;
+    margin-top: 120px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .paciente {
+    width: 80%;
+    background: #2da5cd;
+    border: none;
+    border-radius: 18px;
+    padding: 20px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+    .empresarial {
+    width: 80%;
+    background: #101010;
+    border: none;
+    border-radius: 18px;
+    padding: 20px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  footer{
+    margin-top: 40px;
+  }
+
+  #regresar2{
+    width: 55%;
+    background-color: rgba(0, 62, 138, 0.785);
+    border: 1px solid rgba(0, 62, 138, 0.785);
+    border: none;
+    border-radius: 18px;
+    padding: 14px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#regresar2 a{
+    text-decoration: none;
+    color: white;
+}

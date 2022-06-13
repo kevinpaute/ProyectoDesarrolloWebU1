@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,8 +16,8 @@
         </div>
     </div>
     <div class="container" id="container">
-        <div class="form-container crear-container">
-            <form action="registrar.php" method="post">
+       
+            <form action="registroMedico.php" method="post">
                 <h1>Crear Cuenta</h1>
                 <h4>Ingrese los datos para crear tu cuenta</h4>
                 <div id="Layer1" style="width:100%;  overflow-y: scroll; scrollbar-base-color:aqua;">
@@ -33,10 +32,12 @@
                     <input type="text" name="telefono" placeholder="Telefono" required="">
                     <input type="text" name="ciudad" placeholder="Ciudad" required="">
                     <input type="text" name="direccion" placeholder="Direccion" required=""> 
-                    <label>Añadir foto (Opcional)</label>
+                    <input type="text" name="especialidad" placeholder="ID Especialidad" required="">
+                    <input type="text" name="horario" placeholder="ID Horario" required="">
+                    <br><label>Añadir foto (Opcional)</label>
                     <input type="file" name="foto" placeholder="Foto"> 
 
-                    <label>Datos para iniciar sesión</label>
+                    <br><label>Datos para iniciar sesión</label>
                     <input type="text" name="user" placeholder="Genere usuario" required="">
                     <input type="password" name="password" placeholder="Contraseña" required="">
                 </div>
@@ -44,40 +45,7 @@
             </form>
           
             
-        </div>
-        <div class="form-container iniciar-container">
-            <form action="login.php" method="post">
-                
-                <h1>Iniciar Sesión</h1>
-                
-                <input type="text" name="user" id=¨user¨ placeholder="Usuario" required="">
-                <input type="password" name="password" id=¨password¨ placeholder="Contraseña" required="">
-                
-                <button type="submit" name="login" value="login">Entrar</button>
 
-            </form>
-           
-               
-           
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>¡Bienvenido!</h1>
-                    <p>Inicie sesión con su información personal</p>
-                    <button class="ghost" id="iniciarS">Iniciar Sesión</button>
-                    <button type="clear" id="regresar"> <a href="portal.php">Regresar</a></button>
-                </div>
-
-                <div class="overlay-panel overlay-right">
-                    <h1>¡Regístrese ahora!</h1>
-                    <p>Ingrese sus datos personales y comience una nueva vida con la mejor atención médica</p>
-                    <button class="ghost" id="registro">Registrarse</button>
-                    <button type="clear" id="regresar"> <a href="portal.php">Regresar</a></button>
-                </div>
-                
-            </div>
-        </div>
 
     </div>
     

@@ -10,7 +10,7 @@ var btn_cargar = document.getElementById("btn_cargar_usuarios"),
     tabla1.innerHTML =
     "<tr><th>Facha</th><th>Hora</th><th>Cédula Paciente</th><th>Cédula Medico</th><th>Aciones</th></tr>";
     var peticion = new XMLHttpRequest(); //Realizando una peticion
-    peticion.open("GET", "../php_cita/leer-citas.php");
+    peticion.open("GET", "../php_cita/leer-citasG.php");
     loader.classList.add("active"); // para la rueda de carga
 
   peticion.onload = function () {

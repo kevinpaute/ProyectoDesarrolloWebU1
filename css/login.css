@@ -40,7 +40,7 @@ p {
             0 10px 10px rgba(0,0,0,0.22);
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 70%;
     max-width: 100%;
     min-height: 600px;
@@ -127,11 +127,14 @@ button.ghost {
 
 
 #regresar{
+    padding: 7px;
+    display: flex;
     background-color: rgba(0, 62, 138, 0.785);
     border: 1px solid rgba(0, 62, 138, 0.785);
     padding: 7px;
     display: flex;
     width: 70%;
+    cursor: pointer;
 }
 
 #regresar a{
