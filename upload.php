@@ -18,9 +18,6 @@ if ($b !== false) {
     $image = addslashes(file_get_contents($file));
 
     //Insert the image into the database
-    $query = $conn->query("UPDATE medico set foto = '$image' where idMedico = $id");
-    if ($query) {
-        header("location: medicos.php");
     } else {
         echo "File upload failed.";
     }
