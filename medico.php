@@ -53,10 +53,10 @@ if ($stmt = $conn->prepare($consulta)) {
   $stmt->close();
 }
 
-//Simple parseo para mostrar en la tabla 
+//Simple parseo para mostrar en la tabla es para almacenar la hora de entrada y salida en el dia correspondiente
 $lunes = "";
 $martes = "";
-$miercoles = "";
+$miercoles = ""; // se inicializa y almacena la hora de entrada y salida en el dia correspondiente
 $jueves = "";
 $viernes = "";
 $sabado = "";

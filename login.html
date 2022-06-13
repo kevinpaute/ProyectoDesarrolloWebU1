@@ -1,74 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <title>Crear cuenta</title>
-</head>
-<body>
-    <div class="container" id="container">
-        <div class="form-container crear-container">
-            <form>
-                <h1>Crear Cuenta</h1>
-                <h4>Ingrese los datos para crear tu cuenta</h4>
-                <div id="Layer1" style="width:100%;  overflow-y: scroll; scrollbar-base-color:aqua;">
-                    <input type="text" name="cedula" placeholder="Cedula" required="">
-                    <input type="text" name="username" placeholder="Nombres" required="">
-                    <input type="text" name="lastname" placeholder="Apellido paterno" required="">
-                    <input type="text" name="lastname2" placeholder="Apellido materno (Opcional)" >
-                    <input type="email" name="email" placeholder="Correo (Opcional)" >
-                    
-                    <input type="date" name="fecha" placeholder="Fecha de nacimiento" required="">
-                    <input type="text" name="edad" placeholder="Edad" required="">
-                    <input type="text" name="telefono" placeholder="Telefono" required="">
-                    <input type="text" name="ciudad" placeholder="Ciudad" required="">
-                    <input type="text" name="direccion" placeholder="Direccion" required=""> 
-                    <label>Añadir foto (Opcional)</label>
-                    <input type="file" name="foto" placeholder="Foto"> 
 
-                    <label>Datos para iniciar sesión</label>
-                    <input type="text" name="user" placeholder="Genere usuario" required="">
-                    <input type="password" name="password" placeholder="Contraseña" required="">
-                </div>
-                <button type="submit" name="register" value="register">Registrar</button>
-            </form>
-        </div>
-        <div class="form-container iniciar-container">
-            <form method="POST" action="index.php" target="_blank">
-                
-                <h1>Iniciar Sesión</h1>
-                
-                <input type="text" name="user" placeholder="Usuario">
-                <input type="password" name="password" placeholder="Contraseña">
-                
-                <button type="submit" name="login" value="login">Entrar</button>
-            </form>
-        </div>
-        <div class="overlay-container">
-            <div class="overlay">
-                <div class="overlay-panel overlay-left">
-                    <h1>¡Bienvenido!</h1>
-                    <p>Inicie sesión con su información personal</p>
-                    <button class="ghost" id="iniciarS">Iniciar Sesión</button>
-                </div>
-
-                <div class="overlay-panel overlay-right">
-                    <h1>¡Regístrese ahora!</h1>
-                    <p>Ingrese sus datos personales y comience una nueva vida con la mejor atención médica</p>
-                    <button class="ghost" id="registro">Registrarse</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    
-</body>
-<script src="js/login.js"></script>
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/loader.css">
-    <title>Crear cuenta</title>
+
+    <title>Login</title>
 </head>
 <body>
     <div class="loader_bg">
@@ -124,9 +55,10 @@
                 
                 <button type="submit" name="login" value="login">Entrar</button>
 
-
-                <button type="clear" id="regresar"> <a href="index.php">Regresar</a></button>
             </form>
+           
+               
+           
         </div>
         <div class="overlay-container">
             <div class="overlay">
@@ -134,12 +66,14 @@
                     <h1>¡Bienvenido!</h1>
                     <p>Inicie sesión con su información personal</p>
                     <button class="ghost" id="iniciarS">Iniciar Sesión</button>
+                    <button type="clear" id="regresar"> <a href="portal.php">Regresar</a></button>
                 </div>
 
                 <div class="overlay-panel overlay-right">
                     <h1>¡Regístrese ahora!</h1>
                     <p>Ingrese sus datos personales y comience una nueva vida con la mejor atención médica</p>
                     <button class="ghost" id="registro">Registrarse</button>
+                    <button type="clear" id="regresar"> <a href="portal.php">Regresar</a></button>
                 </div>
                 
             </div>
@@ -155,5 +89,4 @@
             $('.loader_bg').fadeToggle();
         }, 1500);
     </script>
->>>>>>> 071f26689cd72eaeae6aad90b56ef732b2053d27
 </html>

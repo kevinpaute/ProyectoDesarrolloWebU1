@@ -1,0 +1,120 @@
+table{
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+
+table th{
+    background-color: #014552;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: #014552;
+}
+
+
+.container{
+    width: 75%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+input[type="text"]{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.button{
+    background: green;
+    color: #fff;
+    width: 30%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button1{
+    background: #1a2537;
+    color: #fff;
+    width: 30%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button2{
+    background: red;
+    color: #fff;
+    width: 30%;
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Tangerine', cursive;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover{
+    background: cadetblue;
+}
+
+.button1:hover{
+    background: cadetblue;
+}
+
+.button2:hover{
+    background: cadetblue;
+}
+
+.link{
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 200;
+    
+}
+
+.link:hover{
+    color: rgb(28, 107, 110);
+}

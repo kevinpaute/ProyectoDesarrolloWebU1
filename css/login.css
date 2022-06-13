@@ -40,7 +40,7 @@ p {
             0 10px 10px rgba(0,0,0,0.22);
     position: relative;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 80px;
     width: 70%;
     max-width: 100%;
     min-height: 600px;
@@ -127,19 +127,14 @@ button.ghost {
 
 
 #regresar{
-<<<<<<< HEAD
-    background-color: rgb(3, 3, 3);
-    border: 1px solid rgb(3, 3, 3);
     padding: 7px;
     display: flex;
-    width: 100%;
-=======
     background-color: rgba(0, 62, 138, 0.785);
     border: 1px solid rgba(0, 62, 138, 0.785);
     padding: 7px;
     display: flex;
-    width: 90%;
->>>>>>> 071f26689cd72eaeae6aad90b56ef732b2053d27
+    width: 70%;
+    cursor: pointer;
 }
 
 #regresar a{
@@ -254,4 +249,10 @@ button.ghost {
 
 .tyb{
     width: 100%;
+}
+
+#regresar1{
+    background-color: rgba(0, 62, 138, 0.785);
+    border: 1px solid rgba(0, 62, 138, 0.785);
+    margin-top: -300px;
 }
