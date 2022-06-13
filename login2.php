@@ -57,11 +57,11 @@ if(isset($user)){
 
 
 }else{
-    header("location:login2.html"); //Redireccionamos a la pagina principal
+    header("location:loginPersonal.html"); //Redireccionamos a la pagina principal
 }
 
 
-require_once 'login2.html';
+require_once 'loginPersonal.html';
 
 ?>
 
