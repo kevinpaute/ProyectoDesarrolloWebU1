@@ -127,6 +127,8 @@ button.ghost {
 
 
 #regresar{
+    padding: 7px;
+    display: flex;
     background-color: rgba(0, 62, 138, 0.785);
     border: 1px solid rgba(0, 62, 138, 0.785);
     padding: 7px;
